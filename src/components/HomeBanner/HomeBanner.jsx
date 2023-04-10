@@ -9,7 +9,7 @@ const HomeBanner = () => {
                 <button className='text-white font-bold py-3 px-5 rounded bg-gradient-to-r from-[#7E90FE] to-[#9873FF]'>Get Started</button>
             </div>
             <div>
-                <img className='w-full' src={'/src/assets/All Images/P3OLGJ1 copy 1.png'} alt="" />
+                <img className='w-full' src='/banner.png' alt="" />
             </div>
         </div>
     );

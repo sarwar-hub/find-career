@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "img": "/tesla.png",
+        "cat": "Account & Finance",
+        "jobs": 300
+    },
+    {
+        "id": 1,
+        "img": "/tesla.png",
+        "cat": "Creative Dedign",
+        "jobs": 100
+    },
+    {
+        "id": 1,
+        "img": "/tesla.png",
+        "cat": "Marketing & Sales",
+        "jobs": 150
+    },
+    {
+        "id": 1,
+        "img": "/tesla.png",
+        "cat": "Engineering Job",
+        "jobs": 224
+    }
+    
+]
