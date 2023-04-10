@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Root from './Root';
+import Home from './components/Home/Home';
 
 
 
@@ -11,6 +12,12 @@ const router = createBrowserRouter([
     path: '/',
     element: <Root></Root>,
     errorElement: 'error in code',
+    children: [
+      {
+        path: '/',
+        element: <Home></Home>
+      }
+    ]
   }
 ])
 
