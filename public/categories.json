@@ -6,19 +6,19 @@
         "jobs": 300
     },
     {
-        "id": 1,
+        "id": 2,
         "img": "/social-media.png",
         "cat": "Creative Dedign",
         "jobs": 100
     },
     {
-        "id": 1,
+        "id": 3,
         "img": "/business.png",
         "cat": "Marketing & Sales",
         "jobs": 150
     },
     {
-        "id": 1,
+        "id": 4,
         "img": "/chip.png",
         "cat": "Engineering Job",
         "jobs": 224

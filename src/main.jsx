@@ -4,6 +4,8 @@ import './index.css'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Root from './Root';
 import Home from './components/Home/Home';
+import PathErr from './components/404/PathErr';
+
 
 
 
@@ -16,8 +18,13 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>
-      }
+      },
+      
     ]
+  },
+  {
+    path: '*',
+    element: <PathErr></PathErr>
   }
 ])
 
