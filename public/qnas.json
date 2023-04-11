@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "q": "When should use contex API?",
+        "a": "aaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+        "id": "2",
+        "q": "What is custom hook?",
+        "a": "aaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+        "id": "3",
+        "q": "What is the use case of useRef hook?",
+        "a": "aaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+        "id": "4",
+        "q": "What is the use case of useMemo hook?",
+        "a": "aaaaaaaaaaaaaaaaaaaaa"
+    }
+]
