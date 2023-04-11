@@ -15,8 +15,8 @@ const Job = ({job}) => {
                 <span className='text-[#7E90FE] font-medium px-5 py-2 rounded border-[1px] border-[#7E90FE]'>{fulltimeOrPartTime}</span>
             </div>
             <div className='flex gap-x-5'>
-                <span className='text-[#757575] font-medium flex'><img className='mr-2' src="/pin.png" alt="" /> {location}</span>
-                <span className='text-[#757575] font-medium flex'><img className='mr-2' src="/dollar.png" alt="" /> {salary}</span>
+                <span className='text-[#757575] font-medium flex'><img className='mr-2 w-6 h-6' src="/pin.png" alt="" /> {location}</span>
+                <span className='text-[#757575] font-medium flex'><img className='mr-2 w-6 h-6' src="/dollar.png" alt="" /> {salary}</span>
             </div>
             <Link to={`/jobs/${id}`}><button className='w-[150px] text-white font-bold py-3 px-5 rounded bg-gradient-to-r from-[#7E90FE] to-[#9873FF]'>View Details</button></Link>
         </div>

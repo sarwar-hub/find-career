@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <div className='mt-20 py-10 px-2 md:px-[10%] bg-[#1A1919] text-white/50'>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 justify-between gap-5'>
+            <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 justify-between gap-5'>
                 <div className='flex flex-col gap-y-2 '>
                     <h2 className='text-white text-3xl font-semibold'>FindCareer</h2>
                     <p>Explore thousands of job opportunities with all the information you need. Its your future. Come find it.</p>
