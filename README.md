@@ -6,6 +6,7 @@ This is a job finder website, one can visit the site and see defferent available
 2. Tailwindcss
 3. React Router
 4. Recharts
+5. React-Toastify
 
 ## Functionality
 1. Loaded data by loader of react router.

@@ -3,6 +3,9 @@ import { useLoaderData, useParams } from 'react-router-dom';
 import Banner from '../Banner/Banner';
 import { addToDb } from '../../utlities/fakedb';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const JobDetail = () => {
     const {id} = useParams();
     const data = useLoaderData();
@@ -20,10 +23,21 @@ const JobDetail = () => {
 
     const handleApply = (id) => {
         addToDb(id);
+        toast.success('You Have Applied Successfully', {
+            position: "top-center",
+            autoClose: 1000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+        });
     }
 
     return (
         <div>
+        <ToastContainer/>
         <Banner>
             <div className='flex justify-center items-center'>
                 <h1 className='text-3xl md:text-5xl font-semibold text-center mt-[50px]'>Job Details</h1>
