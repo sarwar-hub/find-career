@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { getData } from '../../utlities/fakedb';
 import { useLoaderData } from 'react-router-dom';
 import AppliedJob from '../AppliedJob/AppliedJob';
@@ -10,23 +10,29 @@ const AppliedJobs = () => {
     const [storedJobs, setStoredJobs] = useState(storedAppliedJobs);
     const [loadedJobs, setLoadedJobs] = useState(loadedAllJobs);
 
+    const [appliedJobs, setAppliedJobs] = useState([]);
     
- 
+    useEffect(()=>{
+        const storedAppliedJobs = getData();
 
-   const appliedJobs = [];
-    for (const id in storedJobs) {
-        const job = loadedJobs.find(jobb=>jobb.id == id);
-        if(job in appliedJobs) {
-            return;
-        } else {
-            appliedJobs.push(...appliedJobs, job);
+        let getappliedJobs = [];
+        for (const id in storedAppliedJobs) {
+            const job = loadedJobs.find(jobb=>jobb.id == id);
+            if(job in getappliedJobs) {
+                return;
+            } else {
+                getappliedJobs.push(job);
+            }
         }
-    }
+        setAppliedJobs(getappliedJobs)
+
+
+    },[loadedJobs])
+
+
+
+
     
-    
-    const filterByRemote = () => {
-        
-    }
 
 
 
