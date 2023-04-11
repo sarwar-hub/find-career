@@ -1,22 +1,22 @@
 [
     {
         "id": "1",
-        "q": "When should use contex API?",
-        "a": "aaaaaaaaaaaaaaaaaaaaaaaaa"
+        "q": "When should use context API?",
+        "a": "We use context API to pass data to another component avoiding props drilling. When we have to pass a data to long far component than we use context API"
     },
     {
         "id": "2",
         "q": "What is custom hook?",
-        "a": "aaaaaaaaaaaaaaaaaaaaaaaa"
+        "a": "Custom hook is a custom function that we use to add unique functionality to react app."
     },
     {
         "id": "3",
         "q": "What is the use case of useRef hook?",
-        "a": "aaaaaaaaaaaaaaaaaaaaa"
+        "a": "useRef is a react built-in hook that prevent infinite loop"
     },
     {
         "id": "4",
         "q": "What is the use case of useMemo hook?",
-        "a": "aaaaaaaaaaaaaaaaaaaaa"
+        "a": "useMemo is a react built-in hook that used to prevent needless runs of expensive functions"
     }
 ]
