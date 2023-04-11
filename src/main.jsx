@@ -8,6 +8,7 @@ import PathErr from './components/404/PathErr';
 import JobDetail from './components/JobDetail/JobDetail';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs';
 import Blogs from './components/Blogs/Blogs';
+import Statistics from './components/Statistics/Statistics';
 
 
 
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
         path: 'blog',
         element: <Blogs></Blogs>,
         loader: () => fetch('/qnas.json')
+      },
+      {
+        path: 'statistics',
+        element: <Statistics></Statistics>
       }
       
     ]

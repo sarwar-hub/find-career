@@ -18,7 +18,7 @@ const Job = ({job}) => {
                 <span className='text-[#757575] font-medium flex'><img className='mr-2' src="/pin.png" alt="" /> {location}</span>
                 <span className='text-[#757575] font-medium flex'><img className='mr-2' src="/dollar.png" alt="" /> {salary}</span>
             </div>
-            <Link to={`jobs/${id}`}><button className='w-[150px] text-white font-bold py-3 px-5 rounded bg-gradient-to-r from-[#7E90FE] to-[#9873FF]'>View Details</button></Link>
+            <Link to={`/jobs/${id}`}><button className='w-[150px] text-white font-bold py-3 px-5 rounded bg-gradient-to-r from-[#7E90FE] to-[#9873FF]'>View Details</button></Link>
         </div>
     );
 };
