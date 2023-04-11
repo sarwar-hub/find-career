@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
-import Banner from '../../Banner/Banner';
+import Banner from '../Banner/Banner';
+import { addToDb } from '../../utlities/fakedb';
 
 const JobDetail = () => {
     const {id} = useParams();
     const data = useLoaderData();
 
-    console.log(id);
-    console.log(data);
+
 
     const [job, setJob] = useState({});
     const {jobDescription, jobResponsibility, educationalRequirements, experiences, salary, jobTitle, phone, email, location} = job;
@@ -18,6 +18,9 @@ const JobDetail = () => {
     },[id, data])
 
 
+    const handleApply = (id) => {
+        addToDb(id);
+    }
 
     return (
         <div>
@@ -50,7 +53,7 @@ const JobDetail = () => {
                         <div className='mb-2 flex items-center gap-x-2'><img className='w-4 h-4' src="/pin.png" alt="" /><p className='text-[#757575]'><span className='font-semibold text-gray-800'>Location: </span>{location}</p></div>
                     </div>
                 </div>
-                <button className='w-full mt-5 text-white font-bold py-3 px-5 rounded bg-gradient-to-r from-[#7E90FE] to-[#9873FF]'>Apply Now</button>
+                <button onClick={()=>handleApply(id)} className='w-full mt-5 text-white font-bold py-3 px-5 rounded bg-gradient-to-r from-[#7E90FE] to-[#9873FF]'>Apply Now</button>
             </div>
         </div>
         </div>
