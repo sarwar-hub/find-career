@@ -1,6 +1,6 @@
 [
     {
-      "id": 1,
+      "id": "1",
       "companyLogo": "/google.png",
       "jobTitle": "Software Engineer",
       "companyName": "ABC Corp.",
@@ -16,7 +16,7 @@
       "email": "jobs@abccorp.com"
     },
     {
-      "id": 2,
+      "id": "2",
       "companyLogo": "/netflix.png",
       "jobTitle": "Marketing Manager",
       "companyName": "DEF Inc.",
@@ -32,7 +32,7 @@
       "email": "jobs@definc.com"
     },
     {
-      "id": 3,
+      "id": "3",
       "companyLogo": "/tesla.png",
       "jobTitle": "Data Scientist",
       "companyName": "GHI Corp.",
@@ -48,7 +48,7 @@
       "email": "jobs@ghicorp.com"
     },
     {
-      "id": 4,
+      "id": "4",
       "companyLogo": "/google.png",
       "jobTitle": "Product Manager",
       "companyName": "JKL Corp.",
@@ -64,7 +64,7 @@
       "email": "jobs@jklcorp.com"
     },
     {
-      "id": 5,
+      "id": "5",
       "companyLogo": "/netflix.png",
       "jobTitle": "UX Designer",
       "companyName": "MNO Inc.",
@@ -80,7 +80,7 @@
       "email": "jobs@mnoinc.com"
       },
       {
-      "id": 6,
+      "id": "6",
       "companyLogo": "/tesla.png",
       "jobTitle": "Sales Representative",
       "companyName": "PQR Corp.",

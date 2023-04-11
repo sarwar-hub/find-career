@@ -5,6 +5,7 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Root from './Root';
 import Home from './components/Home/Home';
 import PathErr from './components/404/PathErr';
+import JobDetail from './components/JobDetail/JobDetail';
 
 
 
@@ -18,6 +19,11 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>
+      },
+      {
+        path: 'jobs/:id',
+        element: <JobDetail></JobDetail>,
+        loader: ({params}) => fetch('/jobs.json') 
       },
       
     ]
